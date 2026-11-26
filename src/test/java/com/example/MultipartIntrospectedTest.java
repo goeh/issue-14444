@@ -72,6 +72,6 @@ class MultipartIntrospectedTest {
         String uploadWithQueryValue(@Nullable @QueryValue String q, @Body MultipartBody body);
 
         @Post(value = "/{?q}", produces = MediaType.MULTIPART_FORM_DATA)
-        String uploadWithUriVariable(@Nullable String q, @Body MultipartBody body);
+        String uploadWithUriVariable(@Nullable @QueryValue String q, @Body MultipartBody body);
     }
 }
